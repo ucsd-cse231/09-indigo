@@ -1,0 +1,3 @@
+(let (adder (fn (a) (fn (b) (+ a b))))
+(let (add10 (adder 10))
+  (add10 90)))

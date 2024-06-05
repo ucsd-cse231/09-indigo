@@ -1,0 +1,13 @@
+(defn (foo xs)
+ (if (= xs false)
+   false
+   (let (a0 (vec-get xs 0))
+   (let (a1 (+ a0 0))
+   (let (a2 (vec-get xs 1))
+   (let (a3 (foo a2))
+     (vec a1 a3)
+  ))))))
+
+(let (xs (vec 2 (vec 3 false)))
+  (foo xs)
+)

@@ -1,0 +1,11 @@
+(let (k 0)
+(let (a (loop
+     (if (= k 1000000000) (break 0)
+        (block
+          (set! k (+ k 1))
+          (let* ((n (* 5 5))
+                 (m (* 6 6))
+                 (x (+ n 1))
+                 (y (+ m 1)))
+              (+ x y))))))
+      k))

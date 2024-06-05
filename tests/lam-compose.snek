@@ -1,0 +1,11 @@
+(defn (compose f g)
+  (fn (x) (f (g x))))
+
+(defn (inc x)
+  (+ x 10))
+
+(defn (square y)
+  (* y y))
+
+(let (f (compose inc square))
+  (f input))

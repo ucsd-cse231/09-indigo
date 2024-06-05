@@ -1,0 +1,6 @@
+(defn (range n)
+  (if (= n 3)
+    false
+    (vec n (range (+ n 1)))))
+
+(range 0)

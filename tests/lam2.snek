@@ -1,0 +1,11 @@
+(defn (f it)
+  (it 5))
+
+(defn (incr x)
+  (+ x 1))
+
+(let* ((foo (fn (z) (* z 10)))
+       (a0 (f incr))
+       (a1 (f foo)))
+   (vec a0 a1)
+)
