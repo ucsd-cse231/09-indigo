@@ -217,7 +217,7 @@ impl ConflictGraph {
         let n = regs.len();
         let colors = self.color();
         let mut alloc = HashMap::new();
-        // use `colors` to fill in the values for `alloc`
+        todo!("use `colors` to fill in the values for `alloc`");
         alloc
     }
 }
